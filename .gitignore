@@ -1,0 +1,11 @@
+# Node related
+node_modules
+
+# DB
+data
+
+# ENV
+.env
+
+#HTTP for testing
+*.http
