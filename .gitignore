@@ -1,11 +1,72 @@
-# Node related
+# Dependencies
 node_modules
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 
-# DB
-data
+# Yarn 4 specific
+.yarn/install-state.gz
+.yarn/build-state.yml
+.yarn/cache
+.yarn/unplugged
+.pnp.*
+.yarnrc.yml
 
-# ENV
+# Environment
 .env
+.env.local
+.env.production
+.env.development
+.env*.local
 
-#HTTP for testing
+# Database
+data
+*.db
+*.sqlite
+*.sqlite3
+
+# Testing
 *.http
+coverage
+.nyc_output
+
+# Build output
+dist
+build
+.next
+out
+
+# IDE / Editor
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS files
+Thumbs.db
+Desktop.ini
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Deployment
+.serverless
+.terraform
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Misc
+.cache
+temp
+tmp
+*.tgz
